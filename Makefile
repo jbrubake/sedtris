@@ -11,4 +11,5 @@ PROGNAME        := sedtris sedtris.sed
 .PHONY: install
 
 install:
+	$(INSTALL) -d $(bindir)
 	$(INSTALL_PROGRAM) -t $(bindir) $(PROGNAME)
