@@ -8,7 +8,10 @@ INSTALL_DATA    := $(INSTALL) -m 644
 
 PROGNAME        := sedtris sedtris.sed
 
-.PHONY: install
+.PHONY: all install
+
+all:
+	@echo "Nothing to make. Just run 'make install'"
 
 install:
 	$(INSTALL) -d $(bindir)
